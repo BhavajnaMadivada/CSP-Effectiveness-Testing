@@ -1,0 +1,103 @@
+/* Global Page Styling */
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 17px;
+    color: #0078ff;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #0053b3;
+}
+
+/* Main Container Card */
+.container {
+    max-width: 780px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    animation: fadeUp 0.4s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #bcc6d1;
+    font-size: 16px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0078ff;
+    box-shadow: 0 0 8px rgba(0,120,255,0.2);
+}
+
+/* Buttons */
+button {
+    padding: 12px 22px;
+    margin-top: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+/* Output Boxes */
+.output-box {
+    margin-top: 20px;
+    background: #eef6ff;
+    padding: 15px;
+    border-left: 5px solid #0078ff;
+    border-radius: 10px;
+    min-height: 40px;
+    font-size: 17px;
+}
+
+/* Comment Blocks */
+.comment-box {
+    background: #f4faff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d9e8ff;
+}
